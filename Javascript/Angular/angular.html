@@ -1,0 +1,9 @@
+<div ng-if=" validation">
+    Toggles the divition
+</div>
+<div ng-show="validation" ng-classs="{'alert-warning':handle.length < characters , 'alert-danger': handle.lenght > 5 }">
+    Shows the divition , puts the class you assigned on the place, if the condition is true.
+</div>
+<div ng-hide="validation" ng-repeat="something in list" ng-cloak ng-click="fucntion()">
+    Hides the divition, ng-cloak hides the entry until all is charget,  ng-click gives a function the call when click
+</div>

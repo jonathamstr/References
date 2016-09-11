@@ -1,0 +1,11 @@
+{
+  "name": "angularexamples",
+  "version": "1.0.0",
+  "description": "<a href=\"#tasks\">Queso<a>\r  # Foo\r  * ##### provider()\r     Creating services with it creates a configuring the provider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Aguirre Glez",
+  "license": "MIT"
+}

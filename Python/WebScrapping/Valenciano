@@ -1,0 +1,22 @@
+Python 2.7.13 |Anaconda 4.3.0 (64-bit)| (default, Dec 19 2016, 13:29:36) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://anaconda.org
+>>> from lxml import html
+>>> import requests
+>>> page = requests.get('http://diccionari.llenguavalenciana.com/general/consulta?t=lloc')
+>>> tree = html.fromstring(page.content)
+>>> tree
+<Element html at 0x5afe458>
+>>> buyers = tree.xpath('//div[@class="definitions"]/text()')
+>>> print buyers
+['s. m. Espai ocupat o que pot ser ocupat per qualsevol cosa. / Rel. ', u', igl\xe9sia o espai destinat al cult i a la realisac
+i\xf3 de cerim\xf2nies religioses. // ', u', deixar espai per ad alg\xfa o alguna cosa modificant la seua disposici\xf3. // Par
+age, espai geogr\xe0fic. // Chicoteta poblaci\xf3, menor que la vila i major que l\u2019aldea. // ant. Masia, finca r\xfastica.
+ // Porci\xf3 d\u2019espai assignat a una persona o cosa. // ', u', loc. Adoptar el punt de vista d\u2019un atre. // ', ', prim
+erament, ans de tot. // Destacament militar permanent. // ', u', loc. Poc oport\xfa, injustificadament, que no ve al cas: Eixa
+resposta est\xe0 f\xf2ra de lloc. // C\xe0rrec, ocupaci\xf3, ofici. // ', u', loc. adversativa, indicadora d\u2019una acci\xf3
+que es fa en substituci\xf3 d\u2019una atra, en conte de. // ', u', loc. Oc\xf3rrer, succeir, acont\xe9nyer: La reuni\xf3 tindr
+\xe0 lloc en acabar la segona tanda de treball. // ', ', loc. Ser molt exigent. // ', u', loc. Baixar-li els fums ad alg\xfa, r
+ecordar-li ad alg\xfa qu\xed \xe9s en realitat quan se pensa o creu ser superior o millor.']
+>>>

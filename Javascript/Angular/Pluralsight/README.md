@@ -1,6 +1,6 @@
  Angular App <a href="#tasks">Ir</a>
  [pookie](#tasks)
- * ##### provider()
+ * #####provider()
     Creating services with it creates a configuring the provider
 
 * ##### factory()
@@ -20,7 +20,6 @@
    my tasks
 </a>
 $provide
--------
 
     to know to create a Services
     The provide services creates a provider that then
